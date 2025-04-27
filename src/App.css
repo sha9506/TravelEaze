@@ -1,0 +1,9 @@
+
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+body {
+  overflow: hidden; /* Completely removes scrolling */
+}

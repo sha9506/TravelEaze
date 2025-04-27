@@ -1,0 +1,159 @@
+/* Login  */
+.login {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #152238;
+    color: white;
+  
+    @media (max-width:768px) {
+      justify-content: center;
+    }
+  }
+  
+  .banner-img {
+    width: 50%;
+    height: 100vh;
+  
+    @media (max-width:768px) {
+      display: none;
+    }
+  }
+  
+  .login-input {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  
+    @media (max-width:768px) {
+      width: 100%;
+    }
+  }
+  
+  .login-title {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .login-input-box {
+    padding: 130px 10px 130px 10px;
+  
+    @media (max-width:768px) {
+      padding: 90px 0px 30px 0px;
+    }
+  
+  }
+  
+  .login-welcome {
+    font-size: 48px;
+    font-family: serif;
+    font-weight: bolder;
+  }
+  
+  .login-intro {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+  }
+  
+  .login-form {
+    padding: 14px 148px 27px 148px;
+    font-weight: bold;
+
+  
+    @media (max-width:425px) {
+      padding: 50px 0px 50px 0px;
+    }
+  }
+  
+  .lf-type {
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .lf-input {
+    width: 95%;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F5F7FA;
+    border: 1px;
+  
+    @media (max-width:425px) {
+      width: 85%;
+      padding: 15px;
+    }
+  }
+  
+  .remember-me {
+    font-size: 16px;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+  
+    @media (max-width:768px) {
+      margin-top: 20px;
+    }
+  
+  }
+  
+  .forgot-pass {
+    background-color: transparent;
+    border: 1px grey;
+    font-size: 16px;
+    color: white;
+    font-style: italic;
+  }
+  
+  .forgot-pass:hover
+  {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .login-button {
+    background-color: #93DAFE;
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .login-button:hover
+  {
+    background-color: black;
+    color: white;
+  }
+  
+  .sign-up-button {
+    background-color: transparent;
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+
+  }
+
+.sign-up-button:hover
+{
+  background-color: black;
+  color: white;
+}
+  
+  
