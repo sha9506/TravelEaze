@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from '../../Assets/signup.png';
+import Banner from '../../Assets/tourists-wearing-face-masks.png';
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import './SignUp.css';
@@ -70,8 +70,8 @@ const SignUp=()=>
                 <div className="signup-form">
                     <div className="sf-type">First Name</div>
                     <input className="sf-input" type="text" placeholder="Enter your name" onChange={(e)=>{setFirstName(e.target.value)}}/>
-                    <div className="sf-type">Last Name</div>
-                    <input className="sf-input" type="text" placeholder="Enter your name" onChange={(e)=>{setLastName(e.target.value)}} />
+                    {/* <div className="sf-type">Last Name</div>
+                    <input className="sf-input" type="text" placeholder="Enter your name" onChange={(e)=>{setLastName(e.target.value)}} /> */}
                     <div className="sf-type">Phone Number</div>
                     <input className="sf-input" type="number" placeholder="Enter your phone number" onChange={(e)=>{setPhone(e.target.value)}} />
                     <div className="sf-type">Email</div>

@@ -1,0 +1,99 @@
+/* Cards.css */
+
+.feat {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.section-head h4 {
+    font-size: 32px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-head p {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.item {
+    background: #fff;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom effect on hover */
+.item:hover .icon {
+    transform: scale(1.2);
+}
+
+/* Different colors for each card */
+.feature_box_col_one {
+    color: #3498db; /* Blue for Sedan */
+}
+
+.feature_box_col_two {
+    color: #27ae60; /* Green for Pickup Truck */
+}
+
+.feature_box_col_three {
+    color: #e67e22; /* Orange for Motorcycle */
+}
+
+.feature_box_col_four {
+    color: #9b59b6; /* Purple for Bus */
+}
+
+.feature_box_col_five {
+    color: #e74c3c; /* Red for Monster Truck */
+}
+
+.feature_box_col_six {
+    color: #1abc9c; /* Teal for Van */
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .item {
+        padding: 20px 15px;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,81 @@
+import './Cards.css';
+import { FaCar, FaTruckPickup, FaMotorcycle, FaBus, FaTruckMonster, FaShuttleVan } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
+const Cards = () => {
+
+    const navigate = useNavigate();
+
+    const handleCardClick = (loanType) => {
+        localStorage.setItem("selectedLoan", loanType);
+        navigate("/voice");
+    };
+
+    const selectedLoan = localStorage.getItem("selectedLoan");
+    console.log(selectedLoan);
+
+    return (
+        <div className="feat bg-gray pt-5 pb-5">
+            <div className="container">
+                <div className="row">
+                    <div className="section-head col-sm-12">
+                        <h4><span>Choose your</span> Vehicle</h4>
+                        <p>Select the perfect vehicle that suits your lifestyle, and let our AI Assistant help you with the best options!</p>
+                    </div>
+
+                    {/** Vehicle Cards */}
+                    <div className="col-lg-4 col-sm-6" onClick={() => handleCardClick("Sedan")}>
+                        <div className="item">
+                            <span className="icon feature_box_col_one"><FaCar /></span>
+                            <h6>Sedan</h6>
+                            <p>Elegant and comfortable for daily commutes and family trips...</p>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-sm-6" onClick={() => handleCardClick("Pickup Truck")}>
+                        <div className="item">
+                            <span className="icon feature_box_col_two"><FaTruckPickup /></span>
+                            <h6>Pickup Truck</h6>
+                            <p>Strong and spacious — built for adventure and heavy-duty tasks...</p>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-sm-6" onClick={() => handleCardClick("Motorcycle")}>
+                        <div className="item">
+                            <span className="icon feature_box_col_three"><FaMotorcycle /></span>
+                            <h6>Motorcycle</h6>
+                            <p>Fast, nimble, and perfect for urban rides...</p>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-sm-6" onClick={() => handleCardClick("Bus")}>
+                        <div className="item">
+                            <span className="icon feature_box_col_four"><FaBus /></span>
+                            <h6>Bus</h6>
+                            <p>Ideal for group travel and public transportation needs...</p>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-sm-6" onClick={() => handleCardClick("Monster Truck")}>
+                        <div className="item">
+                            <span className="icon feature_box_col_five"><FaTruckMonster /></span>
+                            <h6>Monster Truck</h6>
+                            <p>Conquer any terrain with ultimate power and style...</p>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-sm-6" onClick={() => handleCardClick("Van")}>
+                        <div className="item">
+                            <span className="icon feature_box_col_six"><FaShuttleVan /></span>
+                            <h6>Van</h6>
+                            <p>Spacious and reliable for family trips or business logistics...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Cards;
